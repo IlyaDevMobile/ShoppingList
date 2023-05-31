@@ -7,7 +7,7 @@ import com.example.shoppinglist.domain.ShopListRepository
 
 object ShopListRepositoryImpl : ShopListRepository {
 
-    private val shopList = mutableListOf<ShopItem>()
+    private val shopList = sortedSetOf<ShopItem>({ o1, o2 -> TODO("Not yet implemented") })
 
     private var autoIncrementId = 0
     private val shopListLD = MutableLiveData<List<ShopItem>>()
